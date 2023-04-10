@@ -1,0 +1,19 @@
+footer{
+    padding: 130px 100px;
+    background: #1A1919;
+    color: #FFFFFF;
+    
+}
+footer h1{
+    color: #FFFFFF;
+}
+footer p{
+    color: rgba(255, 255, 255, 0.7);
+    margin: 12px 0;
+
+}
+
+footer ul li{
+    color: rgba(255, 255, 255, 0.7);
+    margin: 12px 0;
+}
