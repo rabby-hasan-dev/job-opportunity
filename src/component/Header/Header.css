@@ -1,0 +1,37 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   margin: 50px 100px 10px;
+}
+
+nav h1 {
+
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 44px;
+    color: #1A1919;
+}
+
+nav a {
+
+    margin-left: 42px;
+    font-size: 16px;
+
+
+}
+
+
+nav a:active {
+    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+
+}
+
+nav button {
+    padding: 19px 28px;
+    font-size: 20px;
+    color: #FFFFFF;
+    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+    border-radius: 8px;
+
+}
