@@ -1,0 +1,24 @@
+{
+    "category":[
+   {
+      "logo": "https://example.com/category-logo.png",
+      "name": "Account & Finance",
+      "jobs_available": "300 Jobs Available"
+    },
+  {
+      "logo": "https://example.com/category-logo.png",
+      "name": "Creative Design",
+      "jobs_available":"100+ Jobs Available"
+    },
+  {
+      "logo": "https://example.com/category-logo.png",
+      "name": "Marketing & Sales",
+      "jobs_available": "150 Jobs Available"
+    },
+  {
+      "logo": "https://example.com/category-logo.png",
+      "name": "Engineering Job",
+      "jobs_available": "224 Jobs Available"
+    }
+  ]
+  }

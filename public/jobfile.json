@@ -1,0 +1,113 @@
+{
+    "jobs": [
+      {
+        "_id": "6434dd3e2bfd99e79222c870",
+        "company_logo": "https://i.pinimg.com/736x/9f/a3/60/9fa360c5a928043d90aeb2400fc6ce18.jpg",
+        "job_title": "Software Engineer",
+        "company_name": "Acme Corporation",
+        "remote_or_onsite": "Remote",
+        "location": "San Francisco, CA",
+        "fulltime_or_parttime": "Full-time",
+        "salary": "100k-150k",
+        "job_description": "We're looking for a talented software engineer to help us build amazing products.",
+        "job_responsibilities": "Write code, test software, collaborate with team members.",
+        "educational_requirements": "Bachelor's degree in computer science or related field",
+        "experiences": "3+ years of software engineering experience",
+        "contact_information": {
+          "phone": "(555) 555-5555",
+          "email": "jobs@acmecorp.com"
+        }
+      },
+      {
+        "_id": "6434dd3e2b2bc6d8bbb24b51",
+        "company_logo": "https://www.freepnglogos.com/uploads/tesla-logo-png-20.png",
+        "job_title": "Product Manager",
+        "company_name": "Tesla",
+        "remote_or_onsite": "Onsite",
+        "location": "San Francisco, CA",
+        "fulltime_or_parttime": "Full-time",
+        "salary": "100k-120k",
+        "job_description": "We're looking for an experienced product manager to lead our product team.",
+        "job_responsibilities": "Develop product strategy, manage product roadmap, work with cross-functional teams.",
+        "educational_requirements": "Bachelor's degree in business or related field",
+        "experiences": "5+ years of product management experience",
+        "contact_information": {
+          "phone": "(555) 555-5555",
+          "email": "jobs@acmecorp.com"
+        }
+      },
+      {
+        "_id": "6434dd3e3ca9eb2ccc8fdee2",
+        "company_logo": "https://store-images.s-microsoft.com/image/apps.46851.9007199266246365.1f6d0339-ecce-4fe5-840a-652cd84111ad.ddef6be7-6304-41c0-a347-1d571b66dfb2",
+        "job_title": "Marketing Manager",
+        "company_name": "Netflix",
+        "remote_or_onsite": "Onsite",
+        "location": "San Francisco, CA",
+        "fulltime_or_parttime": "Full-time",
+        "salary": "Competitive",
+        "job_description": "We're looking for a skilled marketing manager to lead our marketing team.",
+        "job_responsibilities": "Develop marketing strategy, manage marketing campaigns, work with cross-functional teams.",
+        "educational_requirements": "Bachelor's degree in marketing or related field",
+        "experiences": "5+ years of marketing management experience",
+        "contact_information": {
+          "phone": "(555) 555-5555",
+          "email": "jobs@acmecorp.com"
+        }
+      },
+      {
+        "_id": "6434dd3e458bf4ada0a92989",
+        "company_logo": "https://i.pinimg.com/736x/9f/a3/60/9fa360c5a928043d90aeb2400fc6ce18.jpg",
+        "job_title": "Marketing Manager",
+        "company_name": "Google",
+        "remote_or_onsite": "Onsite",
+        "location": "San Francisco, CA",
+        "fulltime_or_parttime": "Full-time",
+        "salary": "100k-130k",
+        "job_description": "We're looking for a skilled marketing manager to lead our marketing team.",
+        "job_responsibilities": "Develop marketing strategy, manage marketing campaigns, work with cross-functional teams.",
+        "educational_requirements": "Bachelor's degree in marketing or related field",
+        "experiences": "5+ years of marketing management experience",
+        "contact_information": {
+          "phone": "(555) 555-5555",
+          "email": "jobs@acmecorp.com"
+        }
+      },
+      {
+        "_id": "6434dd3efe8519e6d4aeda7f",
+        "company_logo": "https://www.gala-global.org/sites/default/files/Microsoft_Corporation_27.jpg",
+        "job_title": "BlockChain Developer",
+        "company_name": "Microsoft",
+        "remote_or_onsite": "Remote",
+        "location": "San Francisco, CA",
+        "fulltime_or_parttime": "Full-time",
+        "salary": "Competitive",
+        "job_description": "We're looking for a skilled marketing manager to lead our marketing team.",
+        "job_responsibilities": "Develop marketing strategy, manage marketing campaigns, work with cross-functional teams.",
+        "educational_requirements": "Bachelor's degree in marketing or related field",
+        "experiences": "5+ years of marketing management experience",
+        "contact_information": {
+          "phone": "(555) 555-5555",
+          "email": "jobs@acmecorp.com"
+        }
+      },
+      {
+        "_id": "6434dd3e9ce0cffc5a706b74",
+        "company_logo": "https://i.pinimg.com/originals/af/f2/16/aff216eb233cd9fdb730f8f3e16159a7.jpg",
+        "job_title": "Marketing Manager",
+        "company_name": "Acme Corporation",
+        "remote_or_onsite": "Onsite",
+        "location": "San Francisco, CA",
+        "fulltime_or_parttime": "Full-time",
+        "salary": "Competitive",
+        "job_description": "We're looking for a skilled marketing manager to lead our marketing team.",
+        "job_responsibilities": "Develop marketing strategy, manage marketing campaigns, work with cross-functional teams.",
+        "educational_requirements": "Bachelor's degree in marketing or related field",
+        "experiences": "5+ years of marketing management experience",
+        "contact_information": {
+          "phone": "(555) 555-5555",
+          "email": "jobs@acmecorp.com"
+        }
+      }
+    ]
+  }
+      
