@@ -1,0 +1,13 @@
+.btn-info {
+    color: #7E90FE;
+    border: 1px solid #7E90FE;
+    padding: 9px 19px;
+    border-radius: 4px;
+}
+
+.btn-details {
+    color: #FFFFFF;
+    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+    border-radius: 4px;
+    padding: 11px 18px;
+}

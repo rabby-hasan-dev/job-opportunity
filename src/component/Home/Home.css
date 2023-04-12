@@ -4,6 +4,10 @@
     grid-template-columns: repeat(2,1fr);
    
 }
-/* .job-category{
-    padding: 130px 300px;
-} */
+.job-category{
+    padding: 100px 100px;
+}
+
+.job-feature{
+    padding: 0 100px;
+}
