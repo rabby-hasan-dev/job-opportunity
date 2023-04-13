@@ -6,8 +6,10 @@ import Header from '../component/Header/Header';
 const Main = () => {
     return (
         <>
-           <Header></Header>
+         <div className="header">
+         <Header></Header>
            <Outlet></Outlet> 
+         </div>
            <Footer></Footer>
         </>
     );

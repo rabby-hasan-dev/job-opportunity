@@ -1,5 +1,6 @@
-import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link, useLoaderData } from 'react-router-dom';
+import JobDetails from '../../JobDetails/JobDetails';
 import Banner from './Banner/Banner';
 import './Home.css'
 import JobCatagory from './JobCatagory/JobCatagory';
@@ -9,7 +10,16 @@ import Jobs from './Jobs/Jobs';
 const Home = () => {
     const jobData = useLoaderData()
     const { jobs } = jobData;
+    const [jobDetails, setJobDetails]=useState([])
+    
 
+
+    const jobHandler = (job) => {
+        
+       
+
+
+    }
     return (
 
         <main >
@@ -27,8 +37,12 @@ const Home = () => {
                         jobs.map(job => <Jobs
                             key={job._id}
                             job={job}
+                            JobHandler={jobHandler}
                         ></Jobs>)
                     }
+                </div>
+                <div className='text-center'>
+                    <button className='btn-seeAll mt-8 mx-auto'> See All Jobs</button>
                 </div>
 
             </section>

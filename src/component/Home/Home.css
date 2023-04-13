@@ -1,13 +1,25 @@
+
 .banner {
     background: linear-gradient(90deg, rgba(126, 144, 254, 0.05) 0%, rgba(152, 115, 255, 0.05) 100%);
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-   
+    grid-template-columns: repeat(2, 1fr);
+
 }
-.job-category{
+
+.job-category {
     padding: 100px 100px;
 }
 
-.job-feature{
+.job-feature {
     padding: 0 100px;
+}
+
+.btn-seeAll {
+    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+    border-radius: 8px;
+    padding: 19px 28px;
+    font-weight: 800;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom: 125px;
 }
