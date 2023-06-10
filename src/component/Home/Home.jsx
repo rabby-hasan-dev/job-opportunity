@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
-import JobDetails from '../../JobDetails/JobDetails';
+
 import Banner from './Banner/Banner';
 import './Home.css'
 import JobCatagory from './JobCatagory/JobCatagory';
@@ -8,13 +8,12 @@ import Jobs from './Jobs/Jobs';
 
 
 const Home = () => {
-    const jobData = useLoaderData()
-    const { jobs } = jobData;
-    const [jobDetails, setJobDetails]=useState([])
-    
+    const jobs = useLoaderData()
+    const [jobDetails, setJobDetails] = useState([])
 
-    
-    const jobHandler = (job) => {     
+
+
+    const jobHandler = (job) => {
 
 
     }

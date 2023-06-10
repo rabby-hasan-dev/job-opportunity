@@ -1,5 +1,5 @@
 import React from 'react';
-import JobDetails from '../../JobDetails/JobDetails';
+
 
 const Statistic = () => {
     return (

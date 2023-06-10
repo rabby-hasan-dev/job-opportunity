@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 
 import './jobs.css'
 
-const Jobs = ({ job}) => {
+const Jobs = ({ job }) => {
 
     const { _id, company_logo, company_name, fulltime_or_parttime, job_title, location, remote_or_onsite, salary } = job;
-    
+
 
 
     return (
@@ -27,8 +27,10 @@ const Jobs = ({ job}) => {
                     <p className='mr-5'> {location}</p>
                     <p>{salary}</p>
                 </div>
-                {/* <button onClick={() => addToCart(job)} className='btn-details mt-4' > <Link to={`/:${_id}`} >View Details</Link> </button> */}
-                <button className='btn-details mt-4' ><Link to={`/job/${_id}`} >View Details</Link> </button>
+                <Link to={`/job/${_id}`} >
+                    <button className='btn-details mt-4' >View Details </button>
+                </Link>
+
 
             </div>
         </>

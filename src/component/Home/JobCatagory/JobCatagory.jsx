@@ -8,7 +8,6 @@ const JobCatagory = () => {
 
     const [jobcategorys, setJobCategorys] = useState([]);
 
-    // console.log(jobCategorys);
 
     useEffect(() => {
         fetch('jobcategory.json')
