@@ -13,13 +13,12 @@ const Home = () => {
     const [jobDetails, setJobDetails]=useState([])
     
 
-
-    const jobHandler = (job) => {
-        
-       
+    
+    const jobHandler = (job) => {     
 
 
     }
+
     return (
 
         <main >
@@ -32,7 +31,7 @@ const Home = () => {
             <section className='job-feature ' >
                 <h1 className='text-center text-5xl bold'>Featured Jobs</h1>
                 <p className='text-center my-4'>Explore thousands of job opportunities with all the information you need. Its your future</p>
-                <div className=' grid grid-cols-2 gap-4'>
+                <div className=' grid grid-cols-1 lg:grid-cols-2 gap-4'>
                     {
                         jobs.map(job => <Jobs
                             key={job._id}

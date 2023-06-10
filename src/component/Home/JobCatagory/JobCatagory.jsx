@@ -1,35 +1,39 @@
-import { data } from 'autoprefixer';
-import { useEffect, useState } from 'react';
 
+import { useEffect, useState } from 'react';
 import './jobCatagory.css'
-import JCDetails from './jobCatagoryDetails/JCDetails';
+import Details from './Details/Details';
+
 
 const JobCatagory = () => {
 
-    const [jobCategory, setJobCategory] = useState([]);
-    
+    const [jobcategorys, setJobCategorys] = useState([]);
+
+    // console.log(jobCategorys);
+
     useEffect(() => {
         fetch('jobcategory.json')
             .then(res => res.json())
-            .then(data => setJobCategory(data))
+            .then(data => setJobCategorys(data))
 
     }, [])
-  
-    const { category } = jobCategory;
 
-    console.log(category);
-  
+
+
 
     return (
-
-        <div>
-            {/* {
-                category.map(ct => <JCDetails ct={ct} ></JCDetails>)
-            } */}
-
-
-
-
+        <div className='my-8' >
+            <div className="job-heading text-center mb-6">
+                <h1 className='text-5xl mb-4'>Job Category List </h1>
+                <p>Explore thousands of job opportunities with all the information you need. Its your future</p>
+            </div>
+            <div className=' grid grid-cols-2 lg:grid-cols-4 gap-6 '>
+                {
+                    jobcategorys.map(jobCategory => <Details
+                        key={jobCategory._id}
+                        jobCategory={jobCategory}
+                    ></Details>)
+                }
+            </div>
         </div>
     );
 };
