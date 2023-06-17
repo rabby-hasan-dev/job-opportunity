@@ -1,7 +1,6 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 import './jobs.css'
 
 const Jobs = ({ job }) => {
@@ -27,7 +26,7 @@ const Jobs = ({ job }) => {
                     <p className='mr-5'> {location}</p>
                     <p>{salary}</p>
                 </div>
-                <Link to={`/job/${_id}`} >
+                <Link to={`jobdetails/${_id}`} >
                     <button className='btn-details mt-4' >View Details </button>
                 </Link>
 

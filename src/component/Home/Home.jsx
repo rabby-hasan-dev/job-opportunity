@@ -8,16 +8,7 @@ import Jobs from './Jobs/Jobs';
 
 
 const Home = () => {
-    const jobs = useLoaderData()
-    const [jobDetails, setJobDetails] = useState([])
-
-
-
-    const jobHandler = (job) => {
-
-
-    }
-
+    const jobs = useLoaderData();
     return (
 
         <main >
@@ -35,7 +26,7 @@ const Home = () => {
                         jobs.map(job => <Jobs
                             key={job._id}
                             job={job}
-                            JobHandler={jobHandler}
+                          
                         ></Jobs>)
                     }
                 </div>
