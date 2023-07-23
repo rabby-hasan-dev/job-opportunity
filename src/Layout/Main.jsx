@@ -4,15 +4,13 @@ import Footer from '../component/Footer/Footer';
 import Header from '../component/Header/Header';
 
 const Main = () => {
-    return (
-        <>
-         <div className="header">
-         <Header></Header>
-           <Outlet></Outlet> 
-         </div>
-           <Footer></Footer>
-        </>
-    );
+  return (
+    <div>
+      <Header></Header>
+      <Outlet></Outlet>
+      <Footer></Footer>
+    </div>
+  );
 };
 
 export default Main;

@@ -11,7 +11,7 @@ const Home = () => {
     const jobs = useLoaderData();
     return (
 
-        <main >
+        <main className='home ' >
             <section className='banner'>
                 <Banner></Banner>
             </section>

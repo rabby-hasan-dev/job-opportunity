@@ -4,7 +4,7 @@ import './Footer.css'
 const Footer = () => {
     return (
         <footer >
-            <div className='grid grid-cols-5 gap-x-4'>
+            <div className='grid sm:grid-cols-2 lg:grid-cols-5 md:grid-cols-3 gap-4'>
             <div>
                 <h1 className='text-xl mb-3'>Job Opportunity</h1>
                 <p>There are many variations of passages of Lorem Ipsum , but the majority have suffered alteration in some form.</p>

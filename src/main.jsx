@@ -17,17 +17,17 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Main></Main>,
-    errorElement:<ErrorPage></ErrorPage>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: '/',
         element: <Home></Home>,
         loader: () => fetch('jobfile.json')
       },
-      
+
       {
         path: 'jobdetails/:id',
-        element:<JobsDetails></JobsDetails>
+        element: <JobsDetails></JobsDetails>
 
       },
       {
@@ -45,13 +45,15 @@ const router = createBrowserRouter([
         path: 'blog',
         element: <Blog></Blog>
       },
-      
+
     ]
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>,
+  <div className='max-w-[1920px] mx-auto'>
+    <React.StrictMode>
+      <RouterProvider router={router} />
+    </React.StrictMode>,
+  </div>
 )

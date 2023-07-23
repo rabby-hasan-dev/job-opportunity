@@ -5,13 +5,8 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    // colors: {
-    //   'primary': '#7E90FE',
-    //   'bg-primary': 'linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);'
-     
-    // },
     extend: {},
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 }
 

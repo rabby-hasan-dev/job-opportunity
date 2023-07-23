@@ -20,7 +20,7 @@ const Jobs = ({ job }) => {
                 <p className='text-xl'>{company_name}</p>
                 <div className='my-4'>
                     <button className='btn-info mr-4' >{fulltime_or_parttime}</button>
-                    <button className='btn-info'>{remote_or_onsite}</button>
+                    <button className='btn-info '>{remote_or_onsite}</button>
                 </div>
                 <div className='flex text-xl text-gray-400 '>
                     <p className='mr-5'> {location}</p>

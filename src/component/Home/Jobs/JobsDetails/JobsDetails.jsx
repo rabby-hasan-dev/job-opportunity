@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import './jobsDetails.css'
+import banner from '../../../../assets/All Images/banner.png'
 
+import bannerLogo1 from '../../../../assets/All Images/Vector-1.png'
+import bannerLogo2 from '../../../../assets/All Images/Vector.png'
 const JobsDetails = () => {
     const { id } = useParams();
     const [details, setDetails] = useState({});
@@ -20,29 +24,50 @@ const JobsDetails = () => {
     }, [])
 
     return (
-        <div className='grid grid-cols-2 gap-4'>
-            <div>
-                <p>{job_description}</p>
-                <p>{job_responsibilities}</p>
-                <p>{educational_requirements}</p>
-                <p>{experiences}</p>
 
+
+        <div className=''>
+
+            <div className='banner flex justify-between'>
+                <figure> <img src={bannerLogo1} alt="" /></figure>
+                <figure> <img src={bannerLogo2} alt="" /></figure>
+
+
+                {/* <figure> <img src={banner} alt="banner" /></figure> */}
             </div>
-            <div>
 
-                <h2 className='text-2xl'>Job Details</h2>
-                <p>Salary:${salary}</p>
-                <p>Job Title:{job_title}</p>
+            <div className='lg:flex  justify-between max-w-screen-xl my-[130px] px-[130px] mx-auto'>
+                {/* description */}
 
-                <h2>Contact information</h2>
+                <div className='  '>
+                    <p className='my-5 text-lg'> <span className='text-2xl text-bold '>Job Description: </span> {job_description}</p>
+                    <p className='my-5 text-lg'> <span className='text-2xl text-bold '>Job Responsibilities: </span>{job_responsibilities}</p>
+                    <p className='my-5 text-lg'> <span className='text-2xl text-bold '>Job Requirement: </span>{educational_requirements}</p>
+                    <p className='my-5 text-lg'> <span className='text-2xl text-bold '>Job Experiences: </span>{experiences}</p>
 
-                <p>Phone:{contact_information?.phone}</p>
-                <p>Email:{contact_information?.email}</p>
-                <p>Address:{location}</p>
-                <button className='btn'>Apply Now</button>
+                </div>
+
+                {/* job details */}
+                <div className='ml-5'>
+
+                    <div className='jobs-details p-7 text-2xl '>
+                        <h2 className='text-2xl'>Job Details</h2>
+                        <hr className='divide-[#7E90FE] my-6'></hr>
+                        <p>Salary:${salary}</p>
+                        <p>Job Title:{job_title}</p>
+
+                        <h2 className='text-xl'>Contact information</h2>
+                        <hr className='divide-[#7E90FE] my-6'></hr>
+
+                        <p>Phone:{contact_information?.phone}</p>
+                        <p>Email:{contact_information?.email}</p>
+                        <p>Address:{location}</p>
+                    </div>
+                    <button className='btn w-full p-2 bg-[#7E90FE] my-5 '>Apply Now</button>
 
 
 
+                </div>
             </div>
         </div>
     );
