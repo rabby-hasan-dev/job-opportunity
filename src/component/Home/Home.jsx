@@ -1,14 +1,15 @@
-import React, { useState } from 'react';
-import { Link, useLoaderData } from 'react-router-dom';
 
-import Banner from './Banner/Banner';
 import './Home.css'
+import Banner from './Banner/Banner';
 import JobCatagory from './JobCatagory/JobCatagory';
 import Jobs from './Jobs/Jobs';
+import UseJobs from '../../hooks/UseJobs';
+
 
 
 const Home = () => {
-    const jobs = useLoaderData();
+    const [jobs] = UseJobs();
+
     return (
 
         <main className='home ' >
@@ -26,7 +27,7 @@ const Home = () => {
                         jobs.map(job => <Jobs
                             key={job._id}
                             job={job}
-                          
+
                         ></Jobs>)
                     }
                 </div>

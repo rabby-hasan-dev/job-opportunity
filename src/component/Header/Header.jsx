@@ -17,7 +17,7 @@ const Header = () => {
     // fixed z-10 bg-opacity-30
     return (
         <div className='max-w-screen-xl mx-auto'>
-            <div className="navbar  bg-opacity-30 ">
+            <div className="navbar fixed z-10  bg-opacity-30 ">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -39,7 +39,7 @@ const Header = () => {
                 </div>
                 <div className="navbar-end">
 
-                    <button className='btn text-white' >Start Applying</button>
+                    <button className='btn btn-apply text-white' >Start Applying</button>
 
                 </div>
             </div>

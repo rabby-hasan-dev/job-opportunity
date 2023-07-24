@@ -1,32 +1,51 @@
-import React, { useEffect, useState } from 'react';
+
 import { useParams } from 'react-router-dom';
 import './jobsDetails.css'
 import banner from '../../../../assets/All Images/banner.png'
-
 import bannerLogo1 from '../../../../assets/All Images/Vector-1.png'
 import bannerLogo2 from '../../../../assets/All Images/Vector.png'
+import { FaCalendarAlt, FaDollarSign, FaInbox, FaMapMarkerAlt, FaPhoneAlt, FaSms } from 'react-icons/fa';
+import UseJobs from '../../../../hooks/UseJobs';
 const JobsDetails = () => {
     const { id } = useParams();
-    const [details, setDetails] = useState({});
+    const [jobs] = UseJobs();
+
+    const details = jobs.find(job => job?._id === id);
     const { _id, company_logo, company_name, fulltime_or_parttime, job_title, location, remote_or_onsite, salary, job_description, job_responsibilities, educational_requirements, experiences, contact_information
-    } = details;
-    console.log(details);
+    } = details || {};
+
+    const handleApplyJob = (jobsData) => {
+        const id = jobsData?._id;
+        const previousAppliedJobs = JSON.parse(localStorage.getItem('appliedJobs'))
+
+        let appliedJobs = [];
+
+        if (previousAppliedJobs) {
+
+            const filterJobs = previousAppliedJobs.find(job => job._id === id);
+            if (filterJobs) {
+                alert('jobs already applied')
+            }
+            else {
+                appliedJobs.push(...previousAppliedJobs, jobsData);
+                localStorage.setItem('appliedJobs', JSON.stringify(appliedJobs))
+            }
 
 
-    const url = `/public/jobfile.json`
-    useEffect(() => {
-        fetch(url)
-            .then(res => res.json())
-            .then(data => {
-                const findJob = data.find(job => job._id === id);
-                setDetails(findJob);
-            })
-    }, [])
+        }
+        else {
+            appliedJobs.push(jobsData);
+            localStorage.setItem('appliedJobs', JSON.stringify(appliedJobs));
+
+        }
+
+    }
+
 
     return (
 
 
-        <div className=''>
+        <div>
 
             <div className='banner flex justify-between'>
                 <figure> <img src={bannerLogo1} alt="" /></figure>
@@ -53,22 +72,23 @@ const JobsDetails = () => {
                     <div className='jobs-details p-7 text-2xl '>
                         <h2 className='text-2xl'>Job Details</h2>
                         <hr className='divide-[#7E90FE] my-6'></hr>
-                        <p>Salary:${salary}</p>
-                        <p>Job Title:{job_title}</p>
+                        <p> <FaDollarSign></FaDollarSign>Salary:${salary}</p>
+                        <p><FaCalendarAlt></FaCalendarAlt> Job Title:{job_title}</p>
 
-                        <h2 className='text-xl'>Contact information</h2>
+                        <h2 className='text-2xl my-4'>Contact information</h2>
                         <hr className='divide-[#7E90FE] my-6'></hr>
 
-                        <p>Phone:{contact_information?.phone}</p>
-                        <p>Email:{contact_information?.email}</p>
-                        <p>Address:{location}</p>
+                        <p><span><FaPhoneAlt></FaPhoneAlt></span> Phone:{contact_information?.phone}</p>
+                        <p> <FaInbox></FaInbox> Email:{contact_information?.email}</p>
+                        <p> <FaMapMarkerAlt></FaMapMarkerAlt> Address:{location}</p>
                     </div>
-                    <button className='btn w-full p-2 bg-[#7E90FE] my-5 '>Apply Now</button>
+                    <button onClick={() => handleApplyJob(details)} className='btn w-full p-2 bg-[#7E90FE] my-5 '>Apply Now</button>
 
 
 
                 </div>
             </div>
+
         </div>
     );
 };
