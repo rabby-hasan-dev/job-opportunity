@@ -1,7 +1,6 @@
 
 import { useParams } from 'react-router-dom';
 import './jobsDetails.css'
-import banner from '../../../../assets/All Images/banner.png'
 import bannerLogo1 from '../../../../assets/All Images/Vector-1.png'
 import bannerLogo2 from '../../../../assets/All Images/Vector.png'
 import { FaCalendarAlt, FaDollarSign, FaInbox, FaMapMarkerAlt, FaPhoneAlt, FaSms } from 'react-icons/fa';
@@ -48,17 +47,14 @@ const JobsDetails = () => {
         <div>
 
             <div className='banner flex justify-between'>
-                <figure> <img src={bannerLogo1} alt="" /></figure>
                 <figure> <img src={bannerLogo2} alt="" /></figure>
-
-
-                {/* <figure> <img src={banner} alt="banner" /></figure> */}
+                <figure> <img src={bannerLogo1} alt="" /></figure>
             </div>
 
-            <div className='lg:flex  justify-between max-w-screen-xl my-[130px] px-[130px] mx-auto'>
+            <div className='lg:flex justify-between max-w-screen-xl lg:my-[130px] lg:px-[130px] mx-auto'>
                 {/* description */}
 
-                <div className='  '>
+                <div>
                     <p className='my-5 text-lg'> <span className='text-2xl text-bold '>Job Description: </span> {job_description}</p>
                     <p className='my-5 text-lg'> <span className='text-2xl text-bold '>Job Responsibilities: </span>{job_responsibilities}</p>
                     <p className='my-5 text-lg'> <span className='text-2xl text-bold '>Job Requirement: </span>{educational_requirements}</p>
@@ -67,7 +63,7 @@ const JobsDetails = () => {
                 </div>
 
                 {/* job details */}
-                <div className='ml-5'>
+                <div className='lg:ml-5'>
 
                     <div className='jobs-details p-7 text-2xl '>
                         <h2 className='text-2xl'>Job Details</h2>

@@ -16,7 +16,7 @@ const Header = () => {
 
     // fixed z-10 bg-opacity-30
     return (
-        <div className='max-w-screen-xl mx-auto'>
+        <div className=' lg:mx-[100px]'>
             <div className="navbar fixed z-10  bg-opacity-30 ">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -37,7 +37,7 @@ const Header = () => {
 
                     </ul>
                 </div>
-                <div className="navbar-end">
+                <div className="navbar-end lg:mr-[180px]">
 
                     <button className='btn btn-apply text-white' >Start Applying</button>
 

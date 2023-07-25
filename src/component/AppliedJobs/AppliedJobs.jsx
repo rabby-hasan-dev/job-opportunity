@@ -1,27 +1,26 @@
 import React, { useState } from 'react';
 import banner from '../../assets/All Images/banner.png'
+import bannerLogo1 from '../../assets/All Images/Vector.png'
+import bannerLogo2 from '../../assets/All Images/Vector-1.png'
 import { FaDollarSign, FaMapMarkerAlt } from 'react-icons/fa';
 const AppliedJobs = () => {
-    const [jobs, setJobs]=useState([])
+    
     const appliedJobs = JSON.parse(localStorage.getItem('appliedJobs'));
-   
+
     return (
         <div>
 
-            <div className='banner contents'>
-                {/* <figure> <img src={bannerLogo1} alt="" /></figure>
+            <div className='banner w-full flex justify-between'>
+                <figure> <img src={bannerLogo1} alt="" /></figure>
                 <figure> <img src={bannerLogo2} alt="" /></figure>
-               
-                 */}
-                <figure> <img src={banner} alt="banner" /></figure>
             </div>
 
-            <div className='lg:mx-[300px] lg:mt-[227px] lg:mb-[130px] grid grid-cols-1 gap-4'>
+            <div className='lg:mx-[300px] lg:mt-[227px] lg:mb-[130px] grid grid-cols-1 gap-4 '>
                 {
                     appliedJobs?.map(jobItem =>
-                        <div 
-                        key={jobItem._id}
-                        className="card card-side rounded-none  bg-inherit shadow-xl">
+                        <div
+                            key={jobItem._id}
+                            className="card card-side rounded-none  bg-inherit shadow-xl">
                             <figure className='border border-2'><img src={jobItem?.company_logo} className='max-w-[240px] max-h-[240px] min-w-full' alt="image" /></figure>
                             <div className="card-body">
                                 <h2 className="card-title">{jobItem?.job_title}</h2>

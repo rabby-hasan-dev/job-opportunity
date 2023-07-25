@@ -1,25 +1,5 @@
 
 
-.home{
-    max-width: 1280px;
-   
-    margin: 0 auto;
-}
-
-.banner {
-    background: linear-gradient(90deg, rgba(126, 144, 254, 0.05) 0%, rgba(152, 115, 255, 0.05) 100%);
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
-}
-
-.job-category {
-    padding: 100px 100px;
-}
-
-.job-feature {
-    padding: 0 100px;
-}
 
 .btn-seeAll {
     background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);

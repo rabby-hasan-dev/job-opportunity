@@ -11,7 +11,7 @@ const Jobs = ({ job }) => {
 
     return (
         <>
-            <div className='border border-1 p-10'>
+            <div className='border border-2 p-10'>
                 <figure className=" w-1/4  pt-10">
                     <img src={company_logo} alt="company_logo" className="rounded-xl" />
                 </figure>
@@ -23,7 +23,7 @@ const Jobs = ({ job }) => {
                     <button className='... ring-2 ring-blue-500/50 p-2 text-blue-400 '>{remote_or_onsite}</button>
                 </div>
                 <div className='flex text-xl text-gray-400 '>
-                    <p className='mr-5'> <span><FaMapMarkerAlt></FaMapMarkerAlt></span> {location}</p>
+                    <p className='mr-5'> <span className='mr-10'><FaMapMarkerAlt></FaMapMarkerAlt></span> {location}</p>
                     <p><span><FaDollarSign></FaDollarSign></span> {salary}</p>
                 </div>
                 <Link to={`/jobDetails/${_id}`} >

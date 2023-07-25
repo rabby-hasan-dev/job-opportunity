@@ -1,14 +1,12 @@
-import React from 'react';
-import banner from '../../assets/All Images/banner.png'
+
+import bannerLogo1 from '../../assets/All Images/Vector.png'
+import bannerLogo2 from '../../assets/All Images/Vector-1.png'
 const Blog = () => {
     return (
         <div>
-            <div className='banner contents'>
-                {/* <figure> <img src={bannerLogo1} alt="" /></figure>
+            <div className='banner w-full flex justify-between'>
+                <figure> <img src={bannerLogo1} alt="" /></figure>
                 <figure> <img src={bannerLogo2} alt="" /></figure>
-               
-                 */}
-                <figure> <img src={banner} alt="banner" /></figure>
             </div>
             <div className='grid lg:grid-cols-2 gap-4 lg:mx-[200px] my-[100px]'>
 
