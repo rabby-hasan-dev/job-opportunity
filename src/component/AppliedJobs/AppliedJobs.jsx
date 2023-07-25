@@ -1,12 +1,9 @@
-import React, { useState } from 'react';
-import banner from '../../assets/All Images/banner.png'
+
 import bannerLogo1 from '../../assets/All Images/Vector.png'
 import bannerLogo2 from '../../assets/All Images/Vector-1.png'
 import { FaDollarSign, FaMapMarkerAlt } from 'react-icons/fa';
 const AppliedJobs = () => {
-    
     const appliedJobs = JSON.parse(localStorage.getItem('appliedJobs'));
-
     return (
         <div>
 
@@ -20,8 +17,8 @@ const AppliedJobs = () => {
                     appliedJobs?.map(jobItem =>
                         <div
                             key={jobItem._id}
-                            className="card card-side rounded-none  bg-inherit shadow-xl">
-                            <figure className='border border-2'><img src={jobItem?.company_logo} className='max-w-[240px] max-h-[240px] min-w-full' alt="image" /></figure>
+                            className=" border border-2 flex  bg-inherit shadow-xl">
+                            <figure className='lg:m-7 bg-[#F4F4F4] rounded'><img src={jobItem?.company_logo} className='lg:max-w-[240px] lg:max-h-[240px] min-w-full my-auto' alt="image" /></figure>
                             <div className="card-body">
                                 <h2 className="card-title">{jobItem?.job_title}</h2>
                                 <p>{jobItem?.company_name}</p>
