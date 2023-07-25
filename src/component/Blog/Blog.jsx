@@ -15,11 +15,11 @@ const Blog = () => {
                         <h2 className="card-title">1. When should you use context API?</h2>
                         <p>I can also use Context API to store a user's authentication status and pass it down to all the components that need it. This way, I can easily restrict access to certain parts of my application based on the user's authentication status. <br></br>
                             Also can use context api in other cases. Such as
-                            <ul className='list-disc ml-4'>
-                                <li>Theming</li>
+                            
+                                <li >Theming</li>
                                 <li>Multilingual Support</li>
                                 <li>Accessing data from external sources</li>
-                            </ul>
+                            
                         </p>
 
                     </div>

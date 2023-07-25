@@ -3,9 +3,8 @@ import { useEffect, useState } from "react";
 
 const UseJobs = () => {
     const [jobs, setJobs] = useState([])
-    const url = `/public/jobfile.json`
     useEffect(() => {
-        fetch(url)
+        fetch('/jobfile.json')
             .then(res => res.json())
             .then(data => setJobs(data))
     }, [])

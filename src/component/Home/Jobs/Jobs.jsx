@@ -7,8 +7,6 @@ const Jobs = ({ job }) => {
 
     const { _id, company_logo, company_name, fulltime_or_parttime, job_title, location, remote_or_onsite, salary } = job;
 
-
-
     return (
         <>
             <div className='border border-2 p-10'>
@@ -26,7 +24,7 @@ const Jobs = ({ job }) => {
                     <p className='mr-5'> <span className='mr-10'><FaMapMarkerAlt></FaMapMarkerAlt></span> {location}</p>
                     <p><span><FaDollarSign></FaDollarSign></span> {salary}</p>
                 </div>
-                <Link to={`/jobDetails/${_id}`} >
+                <Link to={`/jobDetails/${job?._id}`} >
                     <button className='btn-details mt-4' >View Details </button>
                 </Link>
 
