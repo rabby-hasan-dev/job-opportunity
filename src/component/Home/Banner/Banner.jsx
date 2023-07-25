@@ -1,5 +1,6 @@
 import React from 'react';
 import './Banner.css'
+import bannerPersonLogo from '../../../assets/All Images/P3OLGJ1.png'
 
 const Banner = () => {
     return (
@@ -10,7 +11,7 @@ const Banner = () => {
                 <button>Get Started</button>
             </div>
            <div className="banner-img">
-            <img src="/src/assets/All Images/P3OLGJ1.png" alt="" />
+            <img src={bannerPersonLogo} alt="person" />
 
            </div>
         </>

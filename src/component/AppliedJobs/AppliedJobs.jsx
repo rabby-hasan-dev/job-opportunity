@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import banner from '../../assets/All Images/banner.png'
 import { FaDollarSign, FaMapMarkerAlt } from 'react-icons/fa';
 const AppliedJobs = () => {
+    const [jobs, setJobs]=useState([])
     const appliedJobs = JSON.parse(localStorage.getItem('appliedJobs'));
-
-
+   
     return (
         <div>
 
@@ -18,8 +18,10 @@ const AppliedJobs = () => {
 
             <div className='lg:mx-[300px] lg:mt-[227px] lg:mb-[130px] grid grid-cols-1 gap-4'>
                 {
-                    appliedJobs.map(jobItem =>
-                        <div className="card card-side rounded-none  bg-inherit shadow-xl">
+                    appliedJobs?.map(jobItem =>
+                        <div 
+                        key={jobItem._id}
+                        className="card card-side rounded-none  bg-inherit shadow-xl">
                             <figure className='border border-2'><img src={jobItem?.company_logo} className='max-w-[240px] max-h-[240px] min-w-full' alt="image" /></figure>
                             <div className="card-body">
                                 <h2 className="card-title">{jobItem?.job_title}</h2>
