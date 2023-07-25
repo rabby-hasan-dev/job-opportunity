@@ -11,6 +11,7 @@ import {
     CartesianGrid,
     Tooltip,
     ResponsiveContainer,
+   
 } from 'recharts';
 
 
@@ -80,9 +81,9 @@ const marksData = [
 const Dashboard = () => {
 
     return (
-       <div className='w-full mx-auto'>
-        <h2 className='text-4xl text-center my-8'>All Assignment Marks</h2>
-         < ComposedChart
+       <div className='w-full mx-auto '>
+       
+        < ComposedChart
             width={1200}
             height={400}
             data={marksData}
@@ -102,6 +103,7 @@ const Dashboard = () => {
             <Bar dataKey="obtainMark" barSize={20} fill="#413ea0" />
             <Line type="monotone" dataKey="obtainMark" stroke="#ff7300" />
         </ComposedChart >
+       
        </div>
 
     );
